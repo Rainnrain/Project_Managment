@@ -1,17 +1,27 @@
 package com.lorraine.project_managment.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.MappedSuperclass;
-import org.springframework.context.annotation.Primary;
+import jakarta.persistence.*;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @MappedSuperclass
 public class BaseEntity {
-
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDate lastUpdated;
-    private LocalDate firstInserted;
+
+    private Boolean isDeleted = false;
+
+    @Column(nullable = false,updatable = false)
+    private LocalDateTime insertDateTime;
+
+    @Column(nullable = false,updatable = false)
+    private Long insertUserId;
+
+    @Column(nullable = false)
+    private LocalDateTime lastUpdateDateTime;
+
+    @Column(nullable = false)
+    private Long lastUpdateUserId;
 
 }
