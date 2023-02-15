@@ -1,4 +1,4 @@
-package com.lorraine.project_managment.dto;
+package com.lorraine.project_management.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

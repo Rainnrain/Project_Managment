@@ -1,4 +1,4 @@
-package com.lorraine.project_managment.entity;
+package com.lorraine.project_management.entity;
 
 import jakarta.persistence.*;
 

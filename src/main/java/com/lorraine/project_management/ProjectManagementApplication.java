@@ -1,13 +1,13 @@
-package com.lorraine.project_managment;
+package com.lorraine.project_management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjectManagmentApplication {
+public class ProjectManagementApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ProjectManagmentApplication.class, args);
+        SpringApplication.run(ProjectManagementApplication.class, args);
     }
 
 }

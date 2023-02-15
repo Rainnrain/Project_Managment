@@ -11,10 +11,10 @@
     <groupId>com.Lorraine</groupId>
     <artifactId>Project_Managment</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Project_Managment</name>
-    <description>Project_Managment</description>
+    <name>Project_Management</name>
+    <description>Project_Management</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>

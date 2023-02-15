@@ -1,4 +1,4 @@
-package com.lorraine.project_managment;
+package com.lorraine.project_management;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
