@@ -11,9 +11,14 @@ public class UserDto {
 
     private String password;
 
-    private String firstname;
+    private String firstName;
 
-    private String lastname;
+    private String lastName;
 
     private String phone;
+    private String passWord;
+    private String confirmPassWord;
+   // private RoleDTO role;
+   // private Gender gender;
+    private boolean enabled;
 }
