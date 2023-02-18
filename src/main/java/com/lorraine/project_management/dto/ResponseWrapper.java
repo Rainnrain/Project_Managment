@@ -1,9 +1,12 @@
 package com.lorraine.project_management.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 
-
+@Getter
+@Setter
 public class ResponseWrapper {
 
     private boolean success;

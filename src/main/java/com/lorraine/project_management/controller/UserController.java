@@ -3,7 +3,6 @@ package com.lorraine.project_management.controller;
 import com.lorraine.project_management.dto.ResponseWrapper;
 import com.lorraine.project_management.dto.UserDto;
 import com.lorraine.project_management.service.UserService;
-import org.apache.catalina.filters.AddDefaultCharsetFilter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
