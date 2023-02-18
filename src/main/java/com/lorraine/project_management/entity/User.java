@@ -1,29 +1,30 @@
 package com.lorraine.project_management.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import com.lorraine.project_management.enums.Gender;
+import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
 
 @Entity
 @NoArgsConstructor
+@Table(name = "users")
 public class User extends BaseEntity{
-    @Column(unique = true)
-    private String username;
+    private String firstName;
+    private String lastName;
 
-    private String password;
+    //@Column(unique = true, nullable = false)
+    private String userName;
 
-    private String firstname;
-
-    private String lastname;
-
-    private String phone;
+    @Column(nullable = false)
+    private String passWord;
 
     private boolean enabled;
+    private String phone;
 
-   // @ManyToOne
-   // private Role role;
+    @ManyToOne
+  @JoinColumn(name = "role_id")
+    private Role role;
 
-  //  @ManyToOne
-   // private Company company;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 
 }
